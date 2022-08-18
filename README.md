@@ -8,4 +8,4 @@ I will be using a simple branching strategy throughout the course of this semest
 ## How I will implement the .gitignore files
 All projects are individual projects meaning all files will only be used by myself, therefor allowing me to ignore any files that are not currently in use by a project. This will avoid costly commits to files that shouldn’t be versioned. Some security files will also be ignored in order to keep sensitive information and credentials safe.
 ## Security
-In the remainder of this semester, I will be using secrets as the main source to keep sensitive information and credentials. By doing so only collaborators will be able to have access to these secrets. In some cases, a security file will be created and ignored as second way of keeping information safe.
+In the remainder of this semester, I will be using secrets as the main source to keep sensitive information and credentials. By doing so only collaborators will be able to have access to these secrets. In some cases, a Security.md file will be created and ignored as second way of keeping information safe.
