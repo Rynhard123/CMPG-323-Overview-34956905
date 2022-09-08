@@ -1,5 +1,5 @@
 # CMPG-323-Overview-34956905
-#Project1
+# Project1
 ## Repository
 For the duration of this semester, I will complete all five projects using one repository. Testing each project using development branches before pushing the final updated version. By doing so I will use a basic folder structure to separate the different projects from each other
 ## Diagram of how repository and projects are integrated
@@ -10,4 +10,4 @@ I will be using a simple branching strategy throughout the course of this semest
 All projects are individual projects meaning all files will only be used by myself, therefor allowing me to ignore any files that are not currently in use by a project. This will avoid costly commits to files that shouldn’t be versioned. Some security files will also be ignored in order to keep sensitive information and credentials safe.
 ## Security
 In the remainder of this semester, I will be using secrets as the main source to keep sensitive information and credentials. By doing so only collaborators will be able to have access to these secrets. In some cases, a Security.md file will be created and ignored as second way of keeping information safe.
-#Project2
+# Project2
