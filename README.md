@@ -22,7 +22,7 @@ Source control was used as continuation of project1, to keep up 2 date with all 
 ##Authorization
 Our Database can only be accessed if users has the Database username and password.
 All api endpoints also got their own authorization in order to use the api's. A token-based Authorization was used at all endpoints.
-##Refrencelist
+## Refrencelist
 https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-api-management-using-vs?view=aspnetcore-6.0
 https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-implementation
 https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=06+Cmpg+323+-+Cloud+And+Api+Hosting+1+Sept.m4v
