@@ -11,4 +11,17 @@ All projects are individual projects meaning all files will only be used by myse
 ## Security
 In the remainder of this semester, I will be using secrets as the main source to keep sensitive information and credentials. By doing so only collaborators will be able to have access to these secrets. In some cases, a Security.md file will be created and ignored as second way of keeping information safe.
 # Project2
+## Api and user information
+Project2 is all about api. In this project we created diffrent types of api methods like get,delete,put and post which all have diffrent tasks they perform.
+Api's can be used more than just data retreval but as well as building programs.
+In this program users should be autherized before being able to have access to api methods. Once Authorized users can manipulate database through the use of the diffrent api methods.
+## Azure
+Azure was used in this project to Host our database and our api. Access to resource group was granted to moderaters 
+## Github
+Source control was used as continuation of project1, to keep up 2 date with all our cmpg 323 work.
+##Authorization
+Our Database can only be accessed if users has the Database username and passsword.
+All api endpoints also got their own authorization in order to use the api's. A token based Authorization was used at all endpoints.
+
+
 
