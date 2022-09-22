@@ -1,4 +1,6 @@
-﻿using DeviceManagement_WebApp.Models;
+﻿#nullable disable
+
+using DeviceManagement_WebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;

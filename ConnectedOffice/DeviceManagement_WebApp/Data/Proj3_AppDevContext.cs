@@ -1,23 +1,23 @@
 ﻿#nullable disable
 
 using System;
-using DeviceManagement_WebApp.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using DeviceManagement_WebApp.Models;
 
 // Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
 // If you have enabled NRTs for your project, then un-comment the following line:
-//#nullable disable
+// #nullable disable
 
 namespace DeviceManagement_WebApp.Data
 {
-    public partial class ConnectedOfficeContext : DbContext
+    public partial class Proj3_AppDevContext : DbContext
     {
-        public ConnectedOfficeContext()
+        public Proj3_AppDevContext()
         {
         }
 
-        public ConnectedOfficeContext(DbContextOptions<ConnectedOfficeContext> options)
+        public Proj3_AppDevContext(DbContextOptions<Proj3_AppDevContext> options)
             : base(options)
         {
         }
@@ -26,13 +26,22 @@ namespace DeviceManagement_WebApp.Data
         public virtual DbSet<Device> Device { get; set; }
         public virtual DbSet<Zone> Zone { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                optionsBuilder.UseSqlServer("Persist Security Info=False;User ID=WebApp_Admin; Password=W3bApp123;Initial Catalog=Proj3_AppDev;Data Source=proj3-appdev.database.windows.net");
+            }
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>(entity =>
             {
                 entity.Property(e => e.CategoryId)
                     .HasColumnName("CategoryID")
-                    .ValueGeneratedNever();
+                    .HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.CategoryName).IsRequired();
 
@@ -45,7 +54,7 @@ namespace DeviceManagement_WebApp.Data
             {
                 entity.Property(e => e.DeviceId)
                     .HasColumnName("DeviceID")
-                    .ValueGeneratedNever();
+                    .HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
 
@@ -54,23 +63,13 @@ namespace DeviceManagement_WebApp.Data
                     .HasDefaultValueSql("(getdate())");
 
                 entity.Property(e => e.ZoneId).HasColumnName("ZoneID");
-
-                entity.HasOne(d => d.Category)
-                      .WithMany(p => p.Device)
-                      .HasForeignKey(d => d.CategoryId)
-                      .HasConstraintName("FK_Device_Category");
-
-                entity.HasOne(d => d.Zone)
-                    .WithMany(p => p.Device)
-                    .HasForeignKey(d => d.ZoneId)
-                    .HasConstraintName("FK_Device_Zone");
             });
 
             modelBuilder.Entity<Zone>(entity =>
             {
                 entity.Property(e => e.ZoneId)
                     .HasColumnName("ZoneID")
-                    .ValueGeneratedNever();
+                    .HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.DateCreated)
                     .HasColumnType("datetime")
