@@ -56,14 +56,14 @@ namespace DeviceManagement_WebApp.Data
                 entity.Property(e => e.ZoneId).HasColumnName("ZoneID");
 
                 entity.HasOne(d => d.Category)
-                      .WithMany(p => p.Device)
-                      .HasForeignKey(d => d.CategoryId)
-                      .HasConstraintName("FK_Device_Category");
+                   .WithMany(p => p.Device)
+                   .HasForeignKey(d => d.CategoryId)
+                   .HasConstraintName("FK_Device_Category");
 
                 entity.HasOne(d => d.Zone)
-                    .WithMany(p => p.Device)
-                    .HasForeignKey(d => d.ZoneId)
-                    .HasConstraintName("FK_Device_Zone");
+                     .WithMany(p => p.Device)
+                     .HasForeignKey(d => d.ZoneId)
+                     .HasConstraintName("FK_Device_Zone");
             });
 
             modelBuilder.Entity<Zone>(entity =>
