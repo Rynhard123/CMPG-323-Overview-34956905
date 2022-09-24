@@ -5,10 +5,6 @@ using DeviceManagement_WebApp.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-// Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
-// If you have enabled NRTs for your project, then un-comment the following line:
-//#nullable disable
-
 namespace DeviceManagement_WebApp.Data
 {
     public partial class ConnectedOfficeContext : DbContext
@@ -60,10 +56,10 @@ namespace DeviceManagement_WebApp.Data
                    .HasForeignKey(d => d.CategoryId)
                    .HasConstraintName("FK_Device_Category");
 
-                entity.HasOne(d => d.Zone)
-                     .WithMany(p => p.Device)
-                     .HasForeignKey(d => d.ZoneId)
-                     .HasConstraintName("FK_Device_Zone");
+               entity.HasOne(d => d.Zone)
+                    .WithMany(p => p.Device)
+                    .HasForeignKey(d => d.ZoneId)
+                    .HasConstraintName("FK_Device_Zone");
             });
 
             modelBuilder.Entity<Zone>(entity =>

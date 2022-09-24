@@ -5,9 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using DeviceManagement_WebApp.Models;
 
-// Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
-// If you have enabled NRTs for your project, then un-comment the following line:
-// #nullable disable
+
 
 namespace DeviceManagement_WebApp.Data
 {
@@ -30,8 +28,7 @@ namespace DeviceManagement_WebApp.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Persist Security Info=False;User ID=WebApp_Admin; Password=W3bApp123;Initial Catalog=Proj3_AppDev;Data Source=proj3-appdev.database.windows.net");
+        
             }
         }
 
@@ -63,6 +60,8 @@ namespace DeviceManagement_WebApp.Data
                     .HasDefaultValueSql("(getdate())");
 
                 entity.Property(e => e.ZoneId).HasColumnName("ZoneID");
+
+
             });
 
             modelBuilder.Entity<Zone>(entity =>
