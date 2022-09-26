@@ -22,7 +22,7 @@ namespace DeviceManagement_WebApp.Repository
             try
             {
                 _context.AddAsync(entity);
-                _context.SaveChangesAsync();
+                _context.SaveChanges();
             }
             catch (Exception ex)
             {
@@ -83,7 +83,7 @@ namespace DeviceManagement_WebApp.Repository
             try
             {
                 _context.Update(entity);
-                _context.SaveChangesAsync();
+                _context.SaveChanges();
             }
             catch (Exception ex)
             {

@@ -7,9 +7,9 @@ using System.Linq.Expressions;
 
 namespace DeviceManagement_WebApp.Repository
 {
-    public class ZoneRepository : GenericRepo<Zone>, IZonesRepo
+    public class ZonesRepo : GenericRepo<Zone>, IZonesRepo
     {
-        public ZoneRepository(Proj3_AppDevContext Proj3_AppDevContext) : base(Proj3_AppDevContext)
+        public ZonesRepo(Proj3_AppDevContext Proj3_AppDevContext) : base(Proj3_AppDevContext)
         {
         }
         public Zone GetZoneById(Guid? id)

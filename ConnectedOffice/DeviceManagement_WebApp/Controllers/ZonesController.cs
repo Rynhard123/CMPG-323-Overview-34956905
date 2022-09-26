@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DeviceManagement_WebApp.Data;
 using DeviceManagement_WebApp.Models;
+using DeviceManagement_WebApp.Repository;
 
 namespace DeviceManagement_WebApp.Controllers
 {
@@ -16,9 +17,9 @@ namespace DeviceManagement_WebApp.Controllers
     {
         private readonly Proj3_AppDevContext _context;
 
-        public ZonesController(Proj3_AppDevContext context)
+        public ZonesController(IZonesRepo zoneRepository)
         {
-            _context = context;
+            _zoneRepository = zoneRepository;
         }
 
         // GET: Zones

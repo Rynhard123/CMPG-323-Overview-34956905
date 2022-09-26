@@ -1,6 +1,7 @@
 #nullable disable
 
 using DeviceManagement_WebApp.Data;
+using DeviceManagement_WebApp.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -42,6 +43,11 @@ namespace DeviceManagement_WebApp
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddTransient(typeof(IGenericRepo<>), typeof(GenericRepo<>));
+            services.AddTransient<IDevicesRepo, DevicesRepo>();
+            services.AddTransient<IZonesRepo, ZonesRepo>();
+            services.AddTransient<ICategoriesRepo, CategoriesRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
