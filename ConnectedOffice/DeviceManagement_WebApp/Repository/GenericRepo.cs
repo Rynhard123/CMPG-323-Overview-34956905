@@ -15,31 +15,80 @@ namespace DeviceManagement_WebApp.Repository
         }
         public void Add(T entity)
         {
-            _context.Set<T>().Add(entity);
+            if (entity == null)
+            {
+                throw new ArgumentNullException($"{nameof(Add)} entity must not be null");
+            }
+            try
+            {
+                _context.AddAsync(entity);
+                _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"{nameof(entity)} could not be saved: {ex.Message}");
+            }
         }
+
         public void AddRange(IEnumerable<T> entities)
         {
-            _context.Set<T>().AddRange(entities);
+            throw new NotImplementedException();
         }
+
         public IEnumerable<T> Find(Expression<Func<T, bool>> expression)
         {
-            return _context.Set<T>().Where(expression);
+            throw new NotImplementedException();
         }
+
         public IEnumerable<T> GetAll()
         {
-            return _context.Set<T>().ToList();
+            try
+            {
+                return _context.Set<T>();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Couldn't retrieve entities: {ex.Message}");
+            }
         }
+
         public T GetById(int id)
         {
-            return _context.Set<T>().Find(id);
+            throw new NotImplementedException();
         }
+
         public void Remove(T entity)
         {
-            _context.Set<T>().Remove(entity);
+            try
+            {
+                _context.Set<T>().Remove(entity);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Couldn't remove entity: {ex.Message}");
+            }
         }
+
         public void RemoveRange(IEnumerable<T> entities)
         {
-            _context.Set<T>().RemoveRange(entities);
+            throw new NotImplementedException();
+        }
+
+        public void Update(T entity)
+        {
+            if (entity == null)
+            {
+                throw new ArgumentNullException($"{nameof(Add)} entity must not be null");
+            }
+            try
+            {
+                _context.Update(entity);
+                _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"{nameof(entity)} could not be updated: {ex.Message}");
+            }
         }
     }
 

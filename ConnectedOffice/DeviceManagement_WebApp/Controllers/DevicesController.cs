@@ -14,9 +14,9 @@ namespace DeviceManagement_WebApp.Controllers
 {
     public class DevicesController : Controller
     {
-        private readonly ConnectedOfficeContext _context;
+        private readonly Proj3_AppDevContext _context;
 
-        public DevicesController(ConnectedOfficeContext context)
+        public DevicesController(Proj3_AppDevContext context)
         {
             _context = context;
         }

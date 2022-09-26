@@ -14,9 +14,9 @@ namespace DeviceManagement_WebApp.Controllers
 {
     public class ZonesController : Controller
     {
-        private readonly ConnectedOfficeContext _context;
+        private readonly Proj3_AppDevContext _context;
 
-        public ZonesController(ConnectedOfficeContext context)
+        public ZonesController(Proj3_AppDevContext context)
         {
             _context = context;
         }
