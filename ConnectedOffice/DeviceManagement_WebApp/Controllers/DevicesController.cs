@@ -19,11 +19,11 @@ namespace DeviceManagement_WebApp.Controllers
         private readonly IZonesRepo _zoneRepository;
         private readonly ICategoriesRepo _categoryRepository;
 
-        public DevicesController(IDevicesRepo deviceRepository, IZonesRepo zoneRepository, ICategoriesRepo categoryRepository)
+        public DevicesController(IDevicesRepo deviceRepo, IZonesRepo zoneRepo, ICategoriesRepo categoryRepo)
         {
-            _zoneRepository = zoneRepository;
-            _deviceRepository = deviceRepository;
-            _categoryRepository = categoryRepository;
+            _zoneRepository = zoneRepo;
+            _deviceRepository = deviceRepo;
+            _categoryRepository = categoryRepo;
         }
 
         // GET: Devices
@@ -59,8 +59,7 @@ namespace DeviceManagement_WebApp.Controllers
         }
 
         // POST: Devices/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("DeviceId,DeviceName,CategoryId,ZoneId,Status,IsActive,DateCreated")] Device device)
@@ -91,8 +90,7 @@ namespace DeviceManagement_WebApp.Controllers
         }
 
         // POST: Devices/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("DeviceId,DeviceName,CategoryId,ZoneId,Status,IsActive,DateCreated")] Device device)

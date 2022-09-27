@@ -1,6 +1,7 @@
-﻿using System;
+﻿
+using DeviceManagement_WebApp.Models;
+using System;
 using System.Collections.Generic;
-using System.Security.Policy;
 
 namespace DeviceManagement_WebApp.Repository
 {
@@ -11,5 +12,6 @@ namespace DeviceManagement_WebApp.Repository
         void AddZone(Zone entity);
         void RemoveZone(Zone entity);
         void UpdateZone(Zone entity);
+        
     }
 }
