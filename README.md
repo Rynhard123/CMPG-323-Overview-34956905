@@ -43,6 +43,46 @@ c# - More than one DbContext was found - Stack Overflow
 Package Manager Console Commands | Learn Entity Framework Core
 git - Remove directory from remote repository after adding them to .gitignore - Stack Overflow
 # Project3
+## How the Web Application works:
+When the Web Application is first started, you will be loaded to the 'Home' screen. You will First need to register a user and then log in, in order to access the Web Application. Once Loged in you can create new Zones and Categories and once they have been created you will be able to create a new device. Ps. Zones and Categories need to be created first in order to create a new device. You will be able to edit and delete data. There is also a logout option once you’re finished.
+## Host of Web Application
+The Web Application is Hosted on Azure with the Database created. The Database created is the same Database used in Project 2.
+Access was granted to Resource Group to all in structed users.
+## Branches
+I used Developmet-1 ass the branch during this project and once I finished the Project merged with my main branch.
+## Security
+All sensitive Information was not committed to GitHub and no information was stored in code.
+## CANBAN Board
+During the development of my Project i strictly followed my Canban Board as guidence as to which tasks should be completed when. This helped with time management ass well as as not forgetting any crucial tasks.
+## References
+1.	https://www.c-sharpcorner.com/uploadfile/babu_2082/architectural-patterns-in-net/
+2.	https://www.c-sharpcorner.com/UploadFile/bd5be5/design-patterns-in-net/
+3.	https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/overview/asp-net-mvc-overview
+4.	https://learn.microsoft.com/en-us/answers/questions/287457/web-apps-see-azure-sql-in-another-resource-group.html
+5.	https://stackoverflow.com/questions/41233300/update-entity-class-in-asp-net-core-entity-framework
+6.	https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs1061?f1url=%3FappId%3Droslyn%26k%3Dk(CS1061)
+7.	https://thecodeblogger.com/2021/05/04/how-to-use-appsettings-json-config-file-with-net-console-applications/
+8.	https://stackoverflow.com/questions/24214860/entity-framework-an-error-occurred-while-updating-the-entries-see-the-inner
+9.	https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/keeping-your-local-repository-in-sync-with-github/syncing-your-branch
+10.	https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=08+CMPG+323+-+Design+patternc+class+15+Sept.m4v
+11.	https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=08+CMPG323+-+Project+3+-+WebApp+demo+13+Sept.m4v
+12.	https://www.dropbox.com/sh/p8fiokfpiqv4gud/AAC5X8SdanTnduTWYzVq4kQ7a?dl=0&preview=09+CMPG323+-+Project+3+repository+pattern+concepts+20+Sept+recording.mp4
+13.	c# - Should I worry about "This async method lacks 'await' operators and will run synchronously" warning - Stack Overflow
+14.	GitHub - JacquiM/CMPG-323-IOT-Device-Management
+15.	c# - 'object' does not contain a definition for 'X' - Stack Overflow
+16.	Project 2 – ASP.Net Core Azure guidance documentation (On Efundi)
+17.	Implementing Repository Pattern Guidance Document (On Efundi)
+18.	https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-commits/reverting-a-commit
+19.	https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/keeping-your-local-repository-in-sync-with-github/syncing-your-branch
+20.	https://support.multiscreensite.com/hc/en-us/articles/360053818293-Developer-Mode#:~:text=To%20access%20Developer%20Mode%3A,proceed%20to%20make%20your%20edits.
+21.	https://learn.microsoft.com/en-us/azure/app-service/app-service-ip-restrictions
+22.	https://learn.microsoft.com/en-us/azure/app-service/app-service-plan-manage
+23.	https://thecodeblogger.com/2021/05/03/some-important-generic-host-settings-for-net-applications/
+24.	https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/overview/understanding-models-views-and-controllers-cs?source=recommendations
+25.	https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
+26.	https://zellwk.com/blog/what-not-to-save-into-a-git-repo/
+
+
 
 
 
