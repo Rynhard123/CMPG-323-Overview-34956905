@@ -69,6 +69,16 @@ All sensitive Information was not committed to GitHub and no information was sto
 15.	c# - 'object' does not contain a definition for 'X' - Stack Overflow
 16.	Project 2 – ASP.Net Core Azure guidance documentation (On Efundi)
 17.	Implementing Repository Pattern Guidance Document (On Efundi)
+18.	https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-commits/reverting-a-commit
+19.	https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/keeping-your-local-repository-in-sync-with-github/syncing-your-branch
+20.	https://support.multiscreensite.com/hc/en-us/articles/360053818293-Developer-Mode#:~:text=To%20access%20Developer%20Mode%3A,proceed%20to%20make%20your%20edits.
+21.	https://learn.microsoft.com/en-us/azure/app-service/app-service-ip-restrictions
+22.	https://learn.microsoft.com/en-us/azure/app-service/app-service-plan-manage
+23.	https://thecodeblogger.com/2021/05/03/some-important-generic-host-settings-for-net-applications/
+24.	https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/overview/understanding-models-views-and-controllers-cs?source=recommendations
+25.	https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
+26.	https://zellwk.com/blog/what-not-to-save-into-a-git-repo/
+
 
 
 
