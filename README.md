@@ -47,10 +47,13 @@ git - Remove directory from remote repository after adding them to .gitignore - 
 When the Web Application is first started, you will be loaded to the 'Home' screen. You will First need to register a user and the log in in order to access the Web Application. Once Loged in you can create new Zones and Categories and once they have been created you will be able to create a new device. Ps. Zones and Categories need to be created first in order to create a new device. You will be able to edit and delete data. There is also a logout option once you’re finished.
 ## Host of Web Application
 The Web Application is Hosted on Azure with the Database created. The Database created is the same Database used in Project 2.
+Access was granted to Resource Group to all in structed users.
 ## Branches
 I used Developmet-1 ass the branch during this project and once I finished the Project merged with my main branch.
 ## Security
 All sensitive Information was not committed to GitHub and no information was stored in code.
+## CANBAN Board
+During the development of my Project i strictly followed my Canban Board as guidence as to which tasks should be completed when. This helped with time management ass well as as not forgetting any crucial tasks.
 ## References
 1.	https://www.c-sharpcorner.com/uploadfile/babu_2082/architectural-patterns-in-net/
 2.	https://www.c-sharpcorner.com/UploadFile/bd5be5/design-patterns-in-net/
