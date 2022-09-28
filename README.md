@@ -43,6 +43,15 @@ c# - More than one DbContext was found - Stack Overflow
 Package Manager Console Commands | Learn Entity Framework Core
 git - Remove directory from remote repository after adding them to .gitignore - Stack Overflow
 # Project3
+## How the Web Application works:
+When the Web Aplication is first started, You will be loaded to the 'Home' screen. You will First need to regester a user and the log in in order to access the Web Aplication. Once Loged in you can create new Zones and Categories and once they have been created you will be able to create a new device. Ps. Zones and Categories need to be created first in order to create a new device. You will be able to edit and delete data. There is also a logout option once your finished.
+## Host of Web Application
+The Web Application is Hosted on Azure with the Database created. The Database created is the same Database used in Project 2.
+## Branches
+I used Developmet-1 ass the branch during this project and once I finished the Project merged with my main branch.
+## Security
+All sensitive Information was not commited to github and no information was stored in code.
+## Refrences
 
 
 
