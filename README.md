@@ -81,8 +81,27 @@ During the development of my Project i strictly followed my Canban Board as guid
 24.	https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/overview/understanding-models-views-and-controllers-cs?source=recommendations
 25.	https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
 26.	https://zellwk.com/blog/what-not-to-save-into-a-git-repo/
-
-
-
-
+ 
+# Project4 
+##UiPath studio Project:
+In this project I used UiPath to read data from an excel file to the Web Application though automation. Different workflows were created to split up the categories to solve errors and bugs easier. The Web Application need to be empty before it is run otherwise duplicate entries will be made and functionality of the automation would be compromised. The user email and password are needed in hard code in order for full login to be part of the automation. If all users details are registered and inserted in code at appropriate variables the automation can be run.
+##Delete of records
+The delete automation only works in devices. The zones and categories delete was removed so that the functionality of the project was not compromised.
+##Github
+GitHub was used to source control code and the CANBAN Board was updated during project to keep up with due dates and training. Only main branch was used during this project.
+##References
+https://rpalearners.com/how-to-create-a-datatable-from-excel-in-uipath/#:~:text=By%20using%20an%20Excel%20application,to%20create%20a%20data%20table.&text=If%20the%20excel%20file%20has,will%20save%20the%20file%20automatically.
+https://www.edureka.co/community/41844/possible-add-comments-description-inside-activity-uipath#:~:text=Hi%20%40Utkarsh%2C%20to%20add%20Comments,in%20Properties%20of%20Comment%20activity.
+https://cloud.uipath.com/rynhard/DefaultTenant/orchestrator_/processes?tid=1237275&fid=3810999&index=0&size=10&state=M4ewTgLgPgZglgUwDYBMoDsCGBbBUVxgIDGEcI6UmwxAevQCQAMUDAjFAExQDMUALAF1BQA%3D
+Error message: Error opening workbook. Make sure Excel is installed - News / Knowledge Base - UiPath Community Forum
+https://docs.uipath.com/studio/docs/the-if-activity
+https://academy.uipath.com/courses/introduction-to-rpa-and-automation
+https://docs.uipath.com/studio/docs/ui-automation
+https://www.uipath.com/learning/video-tutorials/excel-datatables-automation
+https://efundi.nwu.ac.za/access/content/group/b4bd0272-e3c3-4151-b9ce-3888cdadc374/Training/Introduction%20To%20Uipath.m4v
+https://www.edureka.co/blog/error-handling-in-uipath/#:~:text=The%20Error%20Handling%20activity%20offers,the%20task%20encounters%20an%20error.
+https://forum.uipath.com/t/open-browser-issue-cannot-communicate-with-the-browser-please-check-the-uipath-extension/418174/4
+https://forum.uipath.com/t/how-to-pass-argument-one-workflow-to-another-workflow/394523
+https://forum.uipath.com/t/insert-data-in-specific-cell-of-excel/130030
+https://forum.uipath.com/t/data-labeling-for-text-public-preview/480250
 
