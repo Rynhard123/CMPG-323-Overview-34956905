@@ -83,13 +83,13 @@ During the development of my Project i strictly followed my Canban Board as guid
 26.	https://zellwk.com/blog/what-not-to-save-into-a-git-repo/
  
 # Project4 
-##UiPath studio Project:
+## UiPath studio Project:
 In this project I used UiPath to read data from an excel file to the Web Application though automation. Different workflows were created to split up the categories to solve errors and bugs easier. The Web Application need to be empty before it is run otherwise duplicate entries will be made and functionality of the automation would be compromised. The user email and password are needed in hard code in order for full login to be part of the automation. If all users details are registered and inserted in code at appropriate variables the automation can be run.
-##Delete of records
+## Delete of records
 The delete automation only works in devices. The zones and categories delete was removed so that the functionality of the project was not compromised.
-##Github
+## Github
 GitHub was used to source control code and the CANBAN Board was updated during project to keep up with due dates and training. Only main branch was used during this project.
-##References
+## References
 https://rpalearners.com/how-to-create-a-datatable-from-excel-in-uipath/#:~:text=By%20using%20an%20Excel%20application,to%20create%20a%20data%20table.&text=If%20the%20excel%20file%20has,will%20save%20the%20file%20automatically.
 https://www.edureka.co/community/41844/possible-add-comments-description-inside-activity-uipath#:~:text=Hi%20%40Utkarsh%2C%20to%20add%20Comments,in%20Properties%20of%20Comment%20activity.
 https://cloud.uipath.com/rynhard/DefaultTenant/orchestrator_/processes?tid=1237275&fid=3810999&index=0&size=10&state=M4ewTgLgPgZglgUwDYBMoDsCGBbBUVxgIDGEcI6UmwxAevQCQAMUDAjFAExQDMUALAF1BQA%3D
